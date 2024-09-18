@@ -21,4 +21,4 @@ def search_movies(request):
                 if request.GET['query'].lower() in m['name'].lower()
             ]
         }
-    return render(request, 'movies/index.html', context)
+    return render(request, 'movies/search.html', context)
